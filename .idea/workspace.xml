@@ -6,30 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af289d6c-dc24-4b0a-a8d3-71cfb328ca58" name="Default Changelist" comment="first commit spring+hibernate project">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/bean/DeptEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/bean/EmpEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/dao/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/dao/JdbcBaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/dao/TestDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/service/TestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/testmain/Test001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/utils/PagingQueryResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/DeptEntity.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/EmpEntity.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/dataSource-all.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/log4j.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.kt" afterDir="false" />
-    </list>
+    <list default="true" id="af289d6c-dc24-4b0a-a8d3-71cfb328ca58" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -259,6 +236,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring_hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -419,8 +410,23 @@
       <workItem from="1559033729812" duration="2150000" />
       <workItem from="1559091334292" duration="12858000" />
       <workItem from="1559269317600" duration="5349000" />
-      <workItem from="1559484358437" duration="433000" />
+      <workItem from="1559484358437" duration="720000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit spring+hibernate project">
+      <created>1559484824067</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559484824067</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit spring+hibernate project">
+      <created>1559485047554</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559485047554</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -435,7 +441,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51337000" />
+    <option name="totallyTimeSpent" value="51624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -448,7 +454,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977064" visible="true" weight="0.3678254" />
       <window_info id="Structure" order="1" sideWeight="0.5022936" side_tool="true" weight="0.21633889" />
@@ -470,10 +475,10 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.1740675" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.3285968" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
