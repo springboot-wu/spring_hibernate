@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %p [%c] - %m%n" />
+		</layout>
+	</appender>
+	
+	<!-- 将日志信息输出到文件，但是当文件的大小达到某个阈值的时候，日志文件会自动回滚 -->
+	<appender name="total"
+		class="org.apache.log4j.RollingFileAppender">
+		<!-- 设置日志输出记录的最低级别，包括ALL，DEBUG， INFO， WARN， ERROR，FATAL，OFF -->
+		<param name="Threshold" value="ALL" />
+		<!-- 设置日志信息输出文件全路径名 -->
+		<param name="File" value="D://Logs/orgTest/total.log" />
+		<!-- 设置是否在重新启动服务时，在原有日志的基础添加新日志，默认为true，若为false则每次启动都会删除并重新新建文件 -->
+		<param name="Append" value="true" />
+		<param name="ImmediateFlush" value="true" />
+		<!--是否启用缓存，默认false-->
+		<param name="BufferedIO" value="false" />
+		<!--缓存大小，依赖上一个参数(bufferedIO), 默认缓存大小8K  -->
+		<param name="BufferSize" value="8192" />
+		<!-- 设置保存备份回滚日志的最大个数 -->
+		<param name="MaxBackupIndex" value="100"/>
+		<!-- 设置当日志文件达到此阈值的时候自动回滚，单位可以是KB，MB，GB，默认单位是KB -->
+		<param name="MaxFileSize" value="4MB" />
+		<param name="Encoding" value="UTF-8" />
+		<!-- 设置日志输出的样式 -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- 设置日志输出的格式 -->
+			<param name="ConversionPattern" value="[%-5p] %d{yyyy-MM-dd HH:mm:ss} [%c]%n%m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="service"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="ALL" />
+        <!-- levels this appender emits -->
+        <param name="File" value="D://Logs/service.log" />
+        <param name="Append" value="true" />
+        <param name="ImmediateFlush" value="true" />
+        <param name="BufferedIO" value="false" />
+        <param name="BufferSize" value="8192" />
+        <param name="MaxBackupIndex" value="50"/>
+        <param name="MaxFileSize" value="4MB" />
+        <param name="Encoding" value="UTF-8" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="[%-5p] %d{yyyy-MM-dd HH:mm:ss} [%c]%n%m%n" />
+        </layout>
+    </appender> 
+
+	 <logger name="com.test.service.TestService" additivity="false">
+        <level value="DEBUG" />
+        <appender-ref ref="service" />
+        <appender-ref ref="stdout" />
+    </logger>
+	
+    <logger name="com" additivity="true">
+        <level value="DEBUG" />
+        <appender-ref ref="stdout" />
+        <appender-ref ref="total" />
+    </logger>
+</log4j:configuration>
